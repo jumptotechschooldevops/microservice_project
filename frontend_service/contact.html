@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — LinuxPro Academy</title>
+  <meta name="description" content="Get in touch with the LinuxPro Academy team. Questions about courses, enrollment, or careers — we're here to help.">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">L</div>
+        Linux<span>Pro</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="courses.html" class="btn btn-primary nav-cta">Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html" class="btn btn-primary">Enroll Now</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Have a question about our courses or enrollment? Our team typically responds within 24 hours.</p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h2>We'd Love to Hear From You</h2>
+          <p>
+            Whether you have a question about a course, need help choosing the right path,
+            or want to explore corporate training options — we're here and happy to help.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x1F4E7;</div>
+              <div class="contact-item-body">
+                <h4>Email Us</h4>
+                <p>contact@linuxpro.academy</p>
+                <p>support@linuxpro.academy</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x1F4DE;</div>
+              <div class="contact-item-body">
+                <h4>Call Us</h4>
+                <p>+1 (555) 234-5678</p>
+                <p>Mon – Fri, 9am – 6pm EST</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x1F4CD;</div>
+              <div class="contact-item-body">
+                <h4>Office</h4>
+                <p>742 Developer Drive, Suite 200</p>
+                <p>San Francisco, CA 94105</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x1F4AC;</div>
+              <div class="contact-item-body">
+                <h4>Live Chat</h4>
+                <p>Available in the student portal</p>
+                <p>Average response: &lt; 2 minutes</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response time callout -->
+          <div style="margin-top:36px;padding:20px 22px;background:rgba(34,211,168,.08);border:1px solid rgba(34,211,168,.2);border-radius:10px;">
+            <div style="font-size:.85rem;font-weight:700;color:var(--accent-green);margin-bottom:6px;">&#x23F0; Response Time</div>
+            <p style="font-size:.85rem;color:#475569;line-height:1.6;">
+              We aim to respond to all inquiries within <strong>24 hours</strong> on business days.
+              For urgent issues, please use the live chat in the student portal.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal reveal-delay-2">
+          <h2>Send Us a Message</h2>
+
+          <div class="form-success-msg" id="formSuccess">
+            &#x2705; Thank you! Your message has been sent. We'll get back to you within 24 hours.
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Maria" autocomplete="given-name" />
+                <span class="form-error">First name is required.</span>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="Chen" autocomplete="family-name" />
+                <span class="form-error">Last name is required.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <span class="form-error">A valid email address is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject">
+                <option value="">Select a subject...</option>
+                <option value="enrollment">Course Enrollment</option>
+                <option value="technical">Technical Support</option>
+                <option value="billing">Billing &amp; Payments</option>
+                <option value="corporate">Corporate Training</option>
+                <option value="partnership">Partnership Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error">Please select a subject.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
+              <span class="form-error">Your message must be at least 20 characters.</span>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;">
+              <input type="checkbox" id="consent" name="consent" style="width:16px;height:16px;accent-color:var(--accent-green);" />
+              <label for="consent" style="font-size:.82rem;color:#64748b;cursor:pointer;">
+                I agree to the <a href="#" style="color:var(--accent-green);">Privacy Policy</a> and consent to being contacted.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+              &#x1F4E8; Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION (placeholder) -->
+  <section style="padding-bottom:80px;background:var(--bg);">
+    <div class="container">
+      <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);height:320px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;" class="reveal">
+        <div style="font-size:3rem;">&#x1F5FA;&#xFE0F;</div>
+        <div style="font-size:1.1rem;font-weight:700;color:var(--white);">742 Developer Drive, Suite 200, San Francisco, CA</div>
+        <div style="font-size:.9rem;color:var(--text-muted);">Embed your Google Maps iframe here for a live map</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="color:#fff;">
+            <div class="nav-logo-icon">L</div>Linux<span>Pro</span>
+          </a>
+          <p>Professional Linux training for the next generation of system administrators, engineers, and DevOps professionals.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social">&#x1D54F;</a>
+            <a href="#" class="footer-social">in</a>
+            <a href="#" class="footer-social">&#x25B6;</a>
+            <a href="#" class="footer-social">&#x2B21;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Linux Fundamentals</a></li>
+            <li><a href="courses.html">System Administration</a></li>
+            <li><a href="courses.html">Shell Scripting</a></li>
+            <li><a href="courses.html">Networking &amp; Security</a></li>
+            <li><a href="courses.html">Linux for DevOps</a></li>
+            <li><a href="courses.html">RHCSA Prep</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">Help Center</a></li>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+        <p>&copy; 2026 LinuxPro Academy. All rights reserved.</p>
+        <p>Built with &#x2764;&#xFE0F; for Linux learners &mdash; <a href="contact.html">contact@linuxpro.academy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

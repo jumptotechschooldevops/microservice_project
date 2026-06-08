@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — LinuxPro Academy</title>
+  <meta name="description" content="Browse all Linux training courses from beginner to professional. Fundamentals, Sysadmin, Scripting, Security, DevOps, and RHCSA Prep.">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">L</div>
+        Linux<span>Pro</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="courses.html" class="btn btn-primary nav-cta">Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html" class="btn btn-primary">Enroll Now</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Courses</span>
+      </div>
+      <h1>All Linux Courses</h1>
+      <p>Choose your level and start your Linux journey today. Beginner to professional tracks available.</p>
+    </div>
+  </header>
+
+  <!-- COURSES SECTION -->
+  <section class="courses-section" style="padding-top:60px;">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Courses</button>
+        <button class="filter-tab" data-filter="beginner">Beginner</button>
+        <button class="filter-tab" data-filter="intermediate">Intermediate</button>
+        <button class="filter-tab" data-filter="advanced">Advanced</button>
+        <button class="filter-tab" data-filter="professional">Professional</button>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid">
+
+        <!-- Course 1: Linux Fundamentals -->
+        <div class="course-card reveal reveal-delay-1" data-level="beginner">
+          <div class="course-thumb course-thumb-1">&#x1F427;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-beginner">Beginner</span>
+            </div>
+            <h3>Linux Fundamentals</h3>
+            <p>Start from scratch. Master the command line, file system navigation, user management, permissions, and essential tools. The perfect starting point for any Linux learner.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 32 lessons</span>
+              <span class="course-detail">&#x23F1; 18 hours</span>
+              <span class="course-detail">&#x1F9EA; 12 labs</span>
+              <span class="course-detail">&#x1F393; Certificate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$79<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2: System Administration -->
+        <div class="course-card reveal reveal-delay-2" data-level="intermediate">
+          <div class="course-thumb course-thumb-2">&#x2699;&#xFE0F;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-intermediate">Intermediate</span>
+            </div>
+            <h3>Linux System Administration</h3>
+            <p>Manage services with systemd, configure storage &amp; LVM, handle networking, and administer users and groups. Build production-ready server skills.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 48 lessons</span>
+              <span class="course-detail">&#x23F1; 26 hours</span>
+              <span class="course-detail">&#x1F9EA; 18 labs</span>
+              <span class="course-detail">&#x1F393; Certificate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$129<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3: Shell Scripting -->
+        <div class="course-card reveal reveal-delay-3" data-level="intermediate">
+          <div class="course-thumb course-thumb-3">&#x1F4DC;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-intermediate">Intermediate</span>
+            </div>
+            <h3>Linux Shell Scripting</h3>
+            <p>Automate repetitive tasks with Bash scripting. Learn variables, loops, functions, regex, and build real automation scripts used in production environments.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 38 lessons</span>
+              <span class="course-detail">&#x23F1; 22 hours</span>
+              <span class="course-detail">&#x1F9EA; 20 labs</span>
+              <span class="course-detail">&#x1F393; Certificate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$99<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4: Networking & Security -->
+        <div class="course-card reveal reveal-delay-1" data-level="advanced">
+          <div class="course-thumb course-thumb-4">&#x1F512;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-advanced">Advanced</span>
+            </div>
+            <h3>Linux Networking &amp; Security</h3>
+            <p>Master iptables, SELinux, SSH hardening, VPN configuration, and network troubleshooting. Protect your infrastructure against real-world threats.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 44 lessons</span>
+              <span class="course-detail">&#x23F1; 28 hours</span>
+              <span class="course-detail">&#x1F9EA; 22 labs</span>
+              <span class="course-detail">&#x1F393; Certificate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$149<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5: Linux for DevOps -->
+        <div class="course-card reveal reveal-delay-2" data-level="advanced">
+          <div class="course-thumb course-thumb-5">&#x1F433;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-advanced">Advanced</span>
+            </div>
+            <h3>Linux for DevOps</h3>
+            <p>Integrate Linux with Docker, Kubernetes, Ansible, Terraform, and CI/CD pipelines. Build cloud-native infrastructure from the ground up.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 56 lessons</span>
+              <span class="course-detail">&#x23F1; 34 hours</span>
+              <span class="course-detail">&#x1F9EA; 24 labs</span>
+              <span class="course-detail">&#x1F393; Certificate</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$179<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6: RHCSA Prep -->
+        <div class="course-card reveal reveal-delay-3" data-level="professional">
+          <div class="course-thumb course-thumb-6">&#x1F3C6;</div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="badge badge-professional">Professional</span>
+            </div>
+            <h3>RHCSA Exam Prep</h3>
+            <p>Comprehensive Red Hat Certified System Administrator preparation. Mock exams, timed practice sessions, and deep-dive coverage of every EX200 objective.</p>
+            <div class="course-details">
+              <span class="course-detail">&#x1F4C5; 62 lessons</span>
+              <span class="course-detail">&#x23F1; 40 hours</span>
+              <span class="course-detail">&#x1F9EA; 30 labs</span>
+              <span class="course-detail">&#x1F393; Exam Prep</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">$229<small>one-time</small></div>
+              <a href="contact.html" class="btn btn-primary" style="padding:9px 18px;font-size:.85rem;">Enroll</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLE CTA -->
+  <section style="padding:72px 0;background:var(--white);">
+    <div class="container">
+      <div style="background:var(--primary);border-radius:20px;padding:52px 44px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;flex-wrap:wrap;" class="reveal">
+        <div>
+          <div class="section-tag" style="margin-bottom:12px;">Best Value</div>
+          <h2 style="color:#fff;font-size:1.8rem;font-weight:800;margin-bottom:12px;">All-Access Bundle</h2>
+          <p style="color:var(--text-muted);line-height:1.7;max-width:500px;">Get all 6 courses, future releases, and community access for one low price. Save 40% compared to buying individually.</p>
+          <ul style="margin-top:18px;display:flex;flex-direction:column;gap:8px;">
+            <li style="font-size:.88rem;color:var(--text-muted);">&#x2705; All 6 current courses</li>
+            <li style="font-size:.88rem;color:var(--text-muted);">&#x2705; All future course releases</li>
+            <li style="font-size:.88rem;color:var(--text-muted);">&#x2705; Private Discord community</li>
+            <li style="font-size:.88rem;color:var(--text-muted);">&#x2705; Monthly live Q&amp;A sessions</li>
+            <li style="font-size:.88rem;color:var(--text-muted);">&#x2705; Certificates of completion</li>
+          </ul>
+        </div>
+        <div style="text-align:center;flex-shrink:0;">
+          <div style="font-size:.85rem;color:var(--text-muted);margin-bottom:4px;text-decoration:line-through;">$864 separately</div>
+          <div style="font-size:3rem;font-weight:900;color:var(--accent-green);line-height:1;">$499</div>
+          <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:20px;">one-time payment</div>
+          <a href="contact.html" class="btn btn-primary" style="font-size:1rem;padding:14px 28px;">Get All Access</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="color:#fff;">
+            <div class="nav-logo-icon">L</div>Linux<span>Pro</span>
+          </a>
+          <p>Professional Linux training for the next generation of system administrators, engineers, and DevOps professionals.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social">&#x1D54F;</a>
+            <a href="#" class="footer-social">in</a>
+            <a href="#" class="footer-social">&#x25B6;</a>
+            <a href="#" class="footer-social">&#x2B21;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Linux Fundamentals</a></li>
+            <li><a href="courses.html">System Administration</a></li>
+            <li><a href="courses.html">Shell Scripting</a></li>
+            <li><a href="courses.html">Networking &amp; Security</a></li>
+            <li><a href="courses.html">Linux for DevOps</a></li>
+            <li><a href="courses.html">RHCSA Prep</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">Help Center</a></li>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+        <p>&copy; 2026 LinuxPro Academy. All rights reserved.</p>
+        <p>Built with &#x2764;&#xFE0F; for Linux learners &mdash; <a href="contact.html">contact@linuxpro.academy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
