@@ -202,3 +202,37 @@ const counterObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+async function loadCourses() {
+
+  try {
+
+    const response = await fetch('/api/courses')
+
+    const courses = await response.json()
+
+    console.log('Courses:', courses)
+
+  } catch (error) {
+
+    console.error('Course Error:', error)
+  }
+}
+
+async function loadStudents() {
+
+  try {
+
+    const response = await fetch('/api/students')
+
+    const students = await response.json()
+
+    console.log('Students:', students)
+
+  } catch (error) {
+
+    console.error('Student Error:', error)
+  }
+}
+
+loadCourses()
+loadStudents()

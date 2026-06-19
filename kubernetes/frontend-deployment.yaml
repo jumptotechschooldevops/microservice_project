@@ -4,23 +4,44 @@ kind: Deployment
 metadata:
   name: frontend-deployment
 
+
 spec:
-  replicas: 2
+  replicas: 4
+
+  strategy:
+    type: RollingUpdate
+
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
 
   selector:
     matchLabels:
-      app: frontend
+      app: frontend-service
 
   template:
     metadata:
       labels:
-        app: frontend
+        app: frontend-service
 
     spec:
       containers:
       - name: frontend-container
 
-        image: 230026708124.dkr.ecr.us-east-2.amazonaws.com/claude-website:v2
+        image: 230026708124.dkr.ecr.us-east-2.amazonaws.com/frontend-service:v8
 
         ports:
         - containerPort: 80
+
+        env:
+        - name: COURSE_API_URL
+          valueFrom:
+            configMapKeyRef:
+              name: frontend-config
+              key: COURSE_API_URL
+
+        - name: STUDENT_API_URL
+          valueFrom:
+            configMapKeyRef:
+              name: frontend-config
+              key: STUDENT_API_URL
