@@ -6,7 +6,7 @@ metadata:
 
 
 spec:
-  replicas: 4
+  replicas: {{ .Values.frontend.replicas }}
 
   strategy:
     type: RollingUpdate
@@ -28,7 +28,7 @@ spec:
       containers:
       - name: frontend-container
 
-        image: 230026708124.dkr.ecr.us-east-2.amazonaws.com/frontend-service:v8
+        image: "{{ .Values.frontend.image.repository }}:{{ .Values.frontend.image.tag }}"
 
         ports:
         - containerPort: 80
