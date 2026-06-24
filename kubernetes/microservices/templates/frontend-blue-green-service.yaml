@@ -5,12 +5,12 @@ metadata:
   name: frontend-service
 
 spec:
+  type: ClusterIP
+
   selector:
-    app: frontend-service
+    app: frontend
+    version: blue
 
   ports:
-  - protocol: TCP
-    port: 80
+  - port: 80
     targetPort: 80
-
-  type: ClusterIP
